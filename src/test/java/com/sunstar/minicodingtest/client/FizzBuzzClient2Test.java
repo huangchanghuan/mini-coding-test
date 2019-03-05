@@ -50,5 +50,4 @@ public class FizzBuzzClient2Test {
         Assert.assertEquals("98",fizzBuzzClient2.print(98));
     }
 
-
 }

@@ -31,4 +31,5 @@ public class FizzBuzzClient1Test {
         Assert.assertEquals("7",fizzBuzzClient1.print(7));
         Assert.assertEquals("98",fizzBuzzClient1.print(98));
     }
+
 }

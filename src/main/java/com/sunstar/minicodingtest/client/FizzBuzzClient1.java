@@ -17,7 +17,7 @@ public class FizzBuzzClient1 {
     private AbstractHandler handler;
 
     private FizzBuzzClient1() {
-        // 初始化责任链处理类
+        // init handlers
         handler = new OutputFizzBuzzWhenMultipleOf3And5Handler();
         AbstractHandler fizz = new OutputFizzWhenMultipleOf3Handler();
         AbstractHandler buzz = new OutputBuzzWhenMultipleOf5Handler();
@@ -25,7 +25,7 @@ public class FizzBuzzClient1 {
         handler.setNextHandler(fizz);
         fizz.setNextHandler(buzz);
         buzz.setNextHandler(number);
-        logger.debug("client1初始化完成");
+        logger.debug("client1 finishes init");
     }
 
     public String print(int number) {
