@@ -4,13 +4,11 @@ import com.sunstar.minicodingtest.handler.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.stream.IntStream;
-
 /**
  * Stage 1
  */
 public class FizzBuzzClient1 {
-    private final Logger logger = LoggerFactory.getLogger(FizzBuzzClient1.class);
+    private static final Logger logger = LoggerFactory.getLogger(FizzBuzzClient1.class);
 
     private static FizzBuzzClient1 fizzBuzzClient1 = new FizzBuzzClient1();
 
@@ -36,8 +34,4 @@ public class FizzBuzzClient1 {
         return fizzBuzzClient1;
     }
 
-    public static void main(String[] args) {
-        // 1 to 100
-        IntStream.rangeClosed(1, 100).mapToObj(value -> fizzBuzzClient1.print(value)).forEach(System.out::println);
-    }
 }

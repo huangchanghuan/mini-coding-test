@@ -1,6 +1,52 @@
 # mini-coding-test
 KissBuzz demo
 
-使用责任链模式,模板方法模式,实现开闭原则
+Required environment: JDK 1.8, Maven 3.3.9
 
-根据不同需求,创建不同client场景类,创建不同handler处理链
+you can get jar by run : mvn package
+
+## stage 1
+
+java -jar mini-coding-test-0.0.1-SNAPSHOT.jar 1
+
+```
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz
+...
+```
+
+## stage 2
+
+java -jar mini-coding-test-0.0.1-SNAPSHOT.jar 2
+
+```
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+Fizz
+14
+FizzBuzz
+...
+```
