@@ -4,7 +4,7 @@ public abstract class AbstractHandler {
 
     private AbstractHandler nextHandler;
 
-    public String print(int number) {
+    public final String print(int number) {
         return match(number) ? result(number) : nextHandler.print(number);
     }
 
